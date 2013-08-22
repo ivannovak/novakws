@@ -1,0 +1,81 @@
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'danielregular';
+    src: url('../font/daniel-webfont.eot');
+    src: url('../font/daniel-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/daniel-webfont.woff') format('woff'),
+         url('../font/daniel-webfont.ttf') format('truetype'),
+         url('../font/daniel-webfont.svg#danielregular') format('svg');
+
+}
+body { background-color: #31343B; }
+.logo {
+    display: block;
+    margin: 20% auto 0;
+    width: 300px;
+}
+.contact {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 400px;
+    text-align: center;
+    text-decoration: none;
+}
+.get-in-touch {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: 55px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+    font-family: 'danielregular';
+    -webkit-animation: slow-tilt 2s infinite ease;
+    -moz-animation: slow-tilt 2s infinite ease;
+    -o-animation: slow-tilt 2s infinite ease;
+}
+@-webkit-keyframes slow-tilt {
+    0% { -webkit-transform: rotate(-5deg) translate(-3px); }
+    50% { -webkit-transform: rotate(-8deg) translate(0px); }
+    100% { -webkit-transform: rotate(-5deg) translate(-3px); }
+}
+@-moz-keyframes slow-tilt {
+    0% { -moz-transform: rotate(-5deg) translate(-3px); }
+    50% { -moz-transform: rotate(-8deg) translate(0px); }
+    100% { -moz-transform: rotate(-5deg) translate(-3px); }
+}
+@-o-keyframes slow-tilt {
+    0% { -o-transform: rotate(-5deg) translate(-3px); }
+    50% { -o-transform: rotate(-8deg) translate(0px); }
+    100% { -o-transform: rotate(-5deg) translate(-3px); }
+}
+@keyframes slow-tilt {
+    0% { transform: rotate(-5deg) translate(-3px); }
+    50% { transform: rotate(-8deg) translate(0px); }
+    100% { transform: rotate(-5deg) translate(-3px); }
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+}
+.gravatar {
+    display: inline-block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border: white 3px solid;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background: url('http://www.gravatar.com/avatar/28ce28c35b5f65d7b40eb5fa44eeefb7.png?s=80') no-repeat;
+    box-shadow: 0 1px 6px -2px black;
+
+}
+.gravatar img {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
